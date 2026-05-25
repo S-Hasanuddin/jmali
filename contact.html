@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Jamia Masjid E Ali Canada</title>
+  <meta name="description" content="Get in touch with Jamia Masjid E Ali Canada. Whether you need assistance, wish to attend a gathering, or want to learn more, we welcome you with open hearts." />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init({ publicKey: "AmJN0j0sqVLjsCXt2" });
+    })();
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Jamia Masjid E Ali Logo" class="nav-logo-img" />
+        Jamia Masjid E Ali
+      </a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" onclick="toggleMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="community-services.html">Services</a></li>
+        <li><a href="spiritual-gatherings.html">Zikr</a></li>
+        <li><a href="online-school.html">School</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Get in touch</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img src="images/contact_mosque_hero.jpg" alt="Islamic Architecture Background" class="img-cover" style="position: absolute; inset: 0; z-index: 0;" />
+    <div class="bg-overlay"></div>
+    <div class="page-hero-inner reveal">
+      <div class="section-label">Reach us</div>
+      <h1 class="heading-xl">We are here<br/>for you</h1>
+      <p class="page-hero-desc">Whether you need assistance, wish to attend a gathering, or simply want to learn more — we welcome you with open hearts.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact">
+    <div class="contact-inner">
+
+      <!-- Left Column: Contact Info -->
+      <div class="contact-info reveal">
+        <h2 class="heading-xl">Get in touch</h2>
+        <p>We are here to help. All messages are treated with complete confidentiality and care.</p>
+
+        <div class="contact-detail">
+          <div class="contact-icon" style="font-family:'Cormorant Garamond',serif;">E</div>
+          <div>
+            <div class="contact-detail-title">Email</div>
+            <div class="contact-detail-value">info@jamiamasjideali.ca</div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon" style="font-family:'Cormorant Garamond',serif;">P</div>
+          <div>
+            <div class="contact-detail-title">Phone</div>
+            <div class="contact-detail-value">Available during office hours</div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon" style="font-family:'Cormorant Garamond',serif;">L</div>
+          <div>
+            <div class="contact-detail-title">Location</div>
+            <div class="contact-detail-value">Canada — contact us for address</div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+          <div>
+            <div class="contact-detail-title">Instagram</div>
+            <div class="contact-detail-value"><a href="https://www.instagram.com/jamiamasjidealicanada/" target="_blank" rel="noopener" style="color: var(--green); text-decoration: none; font-weight: 500;">@jamiamasjidealicanada</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+          </div>
+          <div>
+            <div class="contact-detail-title">Facebook</div>
+            <div class="contact-detail-value"><a href="https://www.facebook.com/profile.php?id=61586691962228" target="_blank" rel="noopener" style="color: var(--green); text-decoration: none; font-weight: 500;">Jamia Masjid E Ali</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Contact Form -->
+      <div class="contact-form reveal">
+        <h3 class="heading-md" style="margin-bottom:24px;">Send a message</h3>
+
+        <div class="form-group">
+          <label for="contact-name">Your name</label>
+          <input type="text" id="contact-name" class="form-input" placeholder="Enter your full name" />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Email address</label>
+          <input type="email" id="contact-email" class="form-input" placeholder="your@email.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-subject">How can we help?</label>
+          <select id="contact-subject" class="form-input" style="appearance:none; cursor:pointer;">
+            <option>Select a topic</option>
+            <option>Zikr gatherings</option>
+            <option>Islamic education / school</option>
+            <option>Food or clothing assistance</option>
+            <option>Nikah services</option>
+            <option>Nikah assistance (private)</option>
+            <option>Donation / volunteering</option>
+            <option>General enquiry</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" class="form-input" placeholder="Write your message here..."></textarea>
+        </div>
+
+        <button class="form-submit" onclick="handleSubmit()">Send Message</button>
+        <p style="font-size:0.85rem; text-align:center; color:rgba(26,21,18,0.45); margin-top:16px;">All messages are treated with complete confidentiality and care.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section reveal">
+    <div class="faq" style="max-width:800px; margin:0 auto;">
+      <div class="faq-header">
+        <div class="section-label">Common questions</div>
+        <h2 class="heading-xl">You may be wondering</h2>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>When do the zikr gatherings take place?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Halqah-e-Zikr meets every Thursday night (Shab-e-Jumma). Mehfil-e-Zikr and Khafi Zikr sessions are scheduled throughout the week. Please contact us for exact times and location details.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>Who can attend the gatherings?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>All seekers are welcome. Our gatherings are open to men and women who wish to deepen their spiritual connection and practice remembrance together. No prior experience is necessary.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>How do I request food or clothing assistance?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Simply reach out through our contact form or call us directly. Our community service team will respond with care and discretion. There is no judgment and no lengthy process — we are here to help.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>How does Imam Mahdi Online School work?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Classes are conducted online, allowing students across Canada and beyond to attend from home. Courses are structured for all levels, from complete beginners to those deepening their knowledge. Contact us to register and receive the schedule.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>Is nikah assistance completely confidential?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Absolutely. All enquiries and assistance provided through our Nikah Assistance programme are handled with complete confidentiality and respect. The dignity of every family is paramount to us.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>How can I support or volunteer?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>We welcome volunteers and donations with open hearts. Please contact us to discuss how you can contribute — whether through your time, skills, or charitable giving. Every act of giving is a blessing.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <h2 class="heading-xl reveal">Come gather with us</h2>
+    <p class="reveal">Every Thursday evening and throughout the week — all are welcome.</p>
+    <div class="cta-actions reveal">
+      <a href="contact.html" class="btn-gold">Attend a Gathering</a>
+      <a href="online-school.html" class="btn-outline-white">Explore the School</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.png" alt="Jamia Masjid E Ali Logo" class="footer-logo-img" />
+          Jamia Masjid E Ali Canada
+        </a>
+        <p class="footer-tagline">Serving with dignity, growing in faith. An Islamic community organisation dedicated to spiritual growth, charitable service, and authentic education.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/jamiamasjidealicanada/" target="_blank" rel="noopener" class="footer-social-link" title="Follow us on Instagram" aria-label="Follow us on Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61586691962228" target="_blank" rel="noopener" class="footer-social-link" title="Follow us on Facebook" aria-label="Follow us on Facebook">
+            <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+          </a>
+        </div>
+        <div class="footer-bismillah" style="margin-top: 20px;">بسم الله الرحمن الرحيم</div>
+      </div>
+      <div>
+        <div class="footer-heading">Our work</div>
+        <ul class="footer-links">
+          <li><a href="community-services.html">Charitable services</a></li>
+          <li><a href="spiritual-gatherings.html">Zikr gatherings</a></li>
+          <li><a href="online-school.html">Imam Mahdi School</a></li>
+          <li><a href="community-services.html#nikah">Nikah services</a></li>
+          <li><a href="contact.html">Get involved</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="online-school.html">Online school</a></li>
+          <li><a href="online-school.html#courses">Course offerings</a></li>
+          <li><a href="contact.html">Enrol today</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Community</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="contact.html">Reach out</a></li>
+          <li><a href="contact.html">Donate</a></li>
+          <li><a href="contact.html">Volunteer</a></li>
+          <li><a href="contact.html">Request help</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Jamia Masjid E Ali Canada — Saifi Foundation. All rights reserved.</span>
+      <span style="font-size:0.75rem; color:rgba(255,255,255,0.2);">Privacy · Terms</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

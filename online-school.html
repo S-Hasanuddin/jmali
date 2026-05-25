@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imam Mahdi Online School — Jamia Masjid E Ali Canada</title>
+  <meta name="description" content="Imam Mahdi Online School offers authentic Islamic education for men, women and children. Courses in Essentials of Islam, Wudu & Namaz, Fasting, Seerat un Nabi, and Tafseer-e-Quran.">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================
+       NAV
+       ============================================ -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Jamia Masjid E Ali Logo" class="nav-logo-img" />
+        Jamia Masjid E Ali
+      </a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" onclick="toggleMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="community-services.html">Services</a></li>
+        <li><a href="spiritual-gatherings.html">Zikr</a></li>
+        <li><a href="online-school.html" class="active">School</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Get in touch</a>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       PAGE HERO
+       ============================================ -->
+  <section class="page-hero">
+    <img src="images/school_quran_hero.jpg" alt="Islamic Architecture Background" class="img-cover" style="position: absolute; inset: 0; z-index: 0;" />
+    <div class="bg-overlay"></div>
+    <div class="page-hero-inner reveal">
+      <div class="section-label">Imam Mahdi Online School</div>
+      <h1 class="heading-xl">Knowledge rooted<br/>in faith</h1>
+      <p class="page-hero-desc">Imam Mahdi Online School is a dedicated platform offering authentic Islamic education for both men, women and children, designed to strengthen foundational knowledge in Deenand nurture spiritual growth.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SCHOOL — COURSES (SCROLL-DRIVEN HORIZONTAL)
+       ============================================ -->
+  <section class="school bg-dark" id="courses">
+    <!-- Wheel-driven horizontal courses -->
+    <div class="courses-scroll-section" id="courses-scroll-section">
+
+        <!-- Header -->
+        <div class="courses-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 24px;">
+          <div>
+            <div class="section-label" style="color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.3);">Core Areas of Learning</div>
+            <h2 class="heading-xl" style="color:#fff; margin-top:8px;">Offered Teachings</h2>
+            <p class="courses-header-desc">Structured programmes covering the essential pillars of Islamic knowledge — from foundational belief to Quranic understanding.</p>
+          </div>
+          <div class="courses-nav-buttons" style="margin-bottom: 8px;">
+            <button id="courses-prev" class="courses-nav-btn" aria-label="Previous Course">&larr;</button>
+            <button id="courses-next" class="courses-nav-btn" aria-label="Next Course">&rarr;</button>
+          </div>
+        </div>
+
+        <div class="courses-track" id="courses-track">
+
+          <div class="course-card" data-course="01">
+            <div class="course-card-body">
+              <h3 class="course-card-title">Essentials of Islam</h3>
+              <p class="course-card-desc">Understanding the basic beliefs and practices that form the foundation of a Muslim's life — the five pillars, articles of faith, and core obligations.</p>
+            </div>
+            <div class="course-card-img" data-letter="م">
+              <img src="images/school_essentials_tafseer.jpg" alt="Open book with calligraphy" onerror="this.style.display='none'" />
+              <div class="course-card-num">01</div>
+            </div>
+          </div>
+
+          <div class="course-card" data-course="02">
+            <div class="course-card-body">
+              <h3 class="course-card-title">Wudu &amp; Namaz</h3>
+              <p class="course-card-desc">Step-by-step guidance on purification and the five daily prayers, following the Sunnah with correct method, conditions, and inner mindfulness.</p>
+            </div>
+            <div class="course-card-img" data-letter="ص">
+              <img src="images/school_wudu_mat.jpg" alt="Beautifully patterned prayer mat" onerror="this.style.display='none'" />
+              <div class="course-card-num">02</div>
+            </div>
+          </div>
+
+          <div class="course-card" data-course="03">
+            <div class="course-card-body">
+              <h3 class="course-card-title">Fasting (Sawm)</h3>
+              <p class="course-card-desc">Learning the rulings, virtues, and profound spiritual benefits of fasting — with focus on Ramadan, intention, and the inner dimensions of abstention.</p>
+            </div>
+            <div class="course-card-img" data-letter="ر">
+              <img src="images/school_fasting_dates.jpg" alt="Ramadan dates and water" onerror="this.style.display='none'" />
+              <div class="course-card-num">03</div>
+            </div>
+          </div>
+
+          <div class="course-card" data-course="04">
+            <div class="course-card-body">
+              <h3 class="course-card-title">Seerat un Nabi &#xFDFA;</h3>
+              <p class="course-card-desc">Exploring the blessed life, noble character, and divine mission of Prophet Muhammad &#xFDFA; — drawing lessons for modern Muslim life from his example.</p>
+            </div>
+            <div class="course-card-img" data-letter="ن">
+              <img src="images/school_seerat_calligraphy.jpg" alt="Seerat un Nabi calligraphy" onerror="this.style.display='none'" />
+              <div class="course-card-num">04</div>
+            </div>
+          </div>
+
+          <div class="course-card" data-course="05">
+            <div class="course-card-body">
+              <h3 class="course-card-title">Tafseer-e-Quran</h3>
+              <p class="course-card-desc">Weekly sessions exploring the meanings, context, lessons, and timeless wisdom of the Holy Qur'an — verse by verse, with scholarly guidance.</p>
+            </div>
+            <div class="course-card-img" data-letter="ق">
+              <img src="images/quran_yaseen.jpg" alt="Tafseer book open" onerror="this.style.display='none'" />
+              <div class="course-card-num">05</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Progress indicator -->
+        <div class="courses-progress">
+          <div class="courses-progress-bar" id="courses-progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Enrol CTA — horizontal below cards -->
+    <div class="school-inner">
+      <div class="school-enrol-band reveal">
+        <div class="school-enrol-left">
+          <h3 class="heading-md">Enrol Today</h3>
+          <p>Classes are available for knowledge seekers of all ages with <strong> special classes exclusively for women and girls</strong> — from those new to Islam to those deepening their knowledge. Structured, accessible, and entirely online.</p>
+        </div>
+        <ul class="enrol-features">
+          <li>Fully online — attend from anywhere</li>
+          <li>Qualified Islamic instructors</li>
+          <li>Beginner-friendly curriculum</li>
+          <li>Community of fellow students</li>
+          <li>Free or donation-based enrolment</li>
+        </ul>
+        <div class="school-enrol-action">
+          <a href="contact.html" class="btn-white" id="school-register-btn">Register Now</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============================================
+       SCHOOL PURPOSE
+       ============================================ -->
+  <section class="school-purpose">
+    <div class="school-purpose-inner reveal">
+      <div class="section-label">Our purpose</div>
+      <h2 class="heading-lg">Making knowledge accessible</h2>
+      <p>The school aims to make Islamic knowledge accessible to every seeker, regardless of location. Through regular online classes, students gain clarity, confidence, and a deeper connection with their faith.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA BANNER + FOOTER
+       ============================================ -->
+  <div class="cta-banner">
+    <h2 class="heading-xl reveal">Come gather with us</h2>
+    <p class="reveal">Every Thursday evening and throughout the week — all are welcome.</p>
+    <div class="cta-actions reveal">
+      <a href="contact.html" class="btn-gold">Attend a Gathering</a>
+      <a href="online-school.html" class="btn-outline-white">Explore the School</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.png" alt="Jamia Masjid E Ali Logo" class="footer-logo-img" />
+          Jamia Masjid E Ali Canada
+        </a>
+        <p class="footer-tagline">Serving with dignity, growing in faith. An Islamic community organisation dedicated to spiritual growth, charitable service, and authentic education.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/jamiamasjidealicanada/" target="_blank" rel="noopener" class="footer-social-link" title="Follow us on Instagram" aria-label="Follow us on Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61586691962228" target="_blank" rel="noopener" class="footer-social-link" title="Follow us on Facebook" aria-label="Follow us on Facebook">
+            <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+          </a>
+        </div>
+        <div class="footer-bismillah" style="margin-top: 20px;">بسم الله الرحمن الرحيم</div>
+      </div>
+      <div>
+        <div class="footer-heading">Our work</div>
+        <ul class="footer-links">
+          <li><a href="community-services.html">Charitable services</a></li>
+          <li><a href="spiritual-gatherings.html">Zikr gatherings</a></li>
+          <li><a href="online-school.html">Imam Mahdi School</a></li>
+          <li><a href="community-services.html#nikah">Nikah services</a></li>
+          <li><a href="contact.html">Get involved</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="online-school.html">Online school</a></li>
+          <li><a href="online-school.html#courses">Course offerings</a></li>
+          <li><a href="contact.html">Enrol today</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Community</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="contact.html">Reach out</a></li>
+          <li><a href="contact.html">Donate</a></li>
+          <li><a href="contact.html">Volunteer</a></li>
+          <li><a href="contact.html">Request help</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Jamia Masjid E Ali Canada — Saifi Foundation. All rights reserved.</span>
+      <span style="font-size:0.75rem; color:rgba(255,255,255,0.2);">Privacy &middot; Terms</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

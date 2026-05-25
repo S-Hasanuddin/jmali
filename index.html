@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamia Masjid E Ali Canada — Saifi Foundation</title>
+  <meta name="description" content="Serving with dignity, growing in faith. An Islamic community organization dedicated to spiritual growth, zikr gatherings, Islamic education, and community service in Canada.">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======== NAV ======== -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Jamia Masjid E Ali Logo" class="nav-logo-img" />
+        Jamia Masjid E Ali
+      </a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" onclick="toggleMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="community-services.html">Services</a></li>
+        <li><a href="spiritual-gatherings.html">Zikr</a></li>
+        <li><a href="online-school.html">School</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Get in touch</a>
+    </div>
+  </nav>
+
+  <!-- ======== INTRO SCREEN ======== -->
+  <div id="intro-screen" class="intro-screen" onclick="dismissIntro()">
+    <!-- Proximity-reactive dot grid (ported from Framer Dots component) -->
+    <canvas id="intro-dots-canvas" class="intro-dots-canvas"></canvas>
+    <div class="intro-content">
+      <img src="images/intro_bismillah.png" class="intro-bismillah-png" alt="Bismillah Calligraphy" />
+      <div class="intro-prompt">Scroll or click to enter</div>
+    </div>
+  </div>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero-stacked" style="position: relative; padding: 140px 5% 100px; text-align: center; color: #fff;">
+    <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=85&auto=format&fit=crop" alt="Jamia Masjid E Ali Canada" class="img-cover" style="position: absolute; inset: 0; z-index: 0;" />
+    <div class="bg-overlay" style="background: rgba(30, 54, 16, 0.85);"></div>
+    <div style="position: relative; z-index: 2; max-width: 1000px; margin: 0 auto;">
+      <div class="hero-content reveal" style="margin-bottom: 80px;">
+        <div class="hero-arabic" style="font-size: 3.5rem; opacity: 0.85; margin-bottom: 16px; line-height: 1.2;">بسم الله الرحمن الرحيم</div>
+        <h1 class="heading-xl hero-title" style="margin-bottom: 8px; font-size: clamp(2.5rem, 5vw, 4.5rem); color: #fff;">Jamia Masjid E Ali Canada</h1>
+        <div class="hero-org-sub" style="margin-bottom: 24px; font-size: 1.1rem; letter-spacing: 0.1em; color: rgba(255,255,255,0.7);">SAIFI FOUNDATION · EST. CANADA</div>
+        <p class="hero-desc" style="margin: 0 auto; max-width: 700px; font-size: 1.2rem; color: rgba(255,255,255,0.9);">An Islamic community organization dedicated to spiritual growth, charitable service, and authentic education — rooted in the Sufi tradition of love and compassion.</p>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-visual-bg" style="min-height: auto; padding: 60px 40px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 12px;">
+          <div class="hero-title" style="margin-bottom: 32px; font-size: clamp(2rem, 4vw, 3.5rem); font-family: 'Cormorant Garamond', serif; font-weight: 600; line-height: 1.15; color: #fff;">Serve with dignity,<br/><em>grow in faith</em></div>
+          <div class="hero-pillars" style="justify-content: center; margin-bottom: 48px;">
+            <a href="#service-zikr" class="pillar-chip" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.3);">Zikr Gatherings</a>
+            <a href="#service-education" class="pillar-chip" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.3);">Islamic Education</a>
+            <a href="#service-food-bank" class="pillar-chip" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.3);">Food Bank</a>
+            <a href="#service-nikah" class="pillar-chip" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.3);">Nikah Services</a>
+            <a href="#pillar-community" class="pillar-chip" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.3);">Community Service</a>
+          </div>
+          <div class="hero-actions" style="justify-content: center;">
+            <a href="community-services.html" class="btn-gold">Explore Our Work</a>
+            <a href="contact.html" class="btn-outline-white">Reach Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== DIVIDER ======== -->
+  <hr class="section-divider">
+
+  <!-- ======== FOUR PILLARS ======== -->
+  <section class="pillars" id="pillars">
+    <div class="section-label reveal">What we stand for</div>
+    <h2 class="heading-xl reveal">Four pillars of<br/>our organization</h2>
+    <div class="pillars-grid reveal">
+      <div class="pillar-card">
+        <div class="pillar-icon green">ذ</div>
+        <h3 class="pillar-title">Spiritual Gatherings</h3>
+        <p class="pillar-desc">Weekly Halqah-e-Zikr, Khafi Zikr, and Mehfil-e-Zikr sessions centred on Zikrullah, Qur'an recitation, Naat Khawani and collective du'a.</p>
+      </div>
+      <div class="pillar-card" id="pillar-community">
+        <div class="pillar-icon gold">خ</div>
+        <h3 class="pillar-title">Community Service</h3>
+        <p class="pillar-desc">Food bank support, clothing distribution, and direct assistance to families and individuals.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon green">ن</div>
+        <h3 class="pillar-title">Nikah Services</h3>
+        <p class="pillar-desc">Shariah-compliant nikah and financial assistance for families provided.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon gold">ع</div>
+        <h3 class="pillar-title">Islamic Education</h3>
+        <p class="pillar-desc">Imam Mahdi Online School offers foundational Islamic learning, Tafseer, Seerah, prayer guidance, and spiritual development for all.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== ABOUT BAND ======== -->
+  <section class="about">
+    <div class="about-inner">
+      <div>
+        <div class="section-label reveal">Our mission</div>
+        <h2 class="heading-xl reveal">A community built<br/>on sincerity</h2>
+        <p class="about-desc reveal">Jamia Masjid E Ali Canada is a spiritually grounded Islamic community organization dedicated to serving every soul with compassion and dignity. We are guided by the values of unity, service, and love for Allah and His creation.</p>
+        <div class="about-stats reveal">
+          <div class="stat">
+            <div class="stat-num">Multiple</div>
+            <div class="stat-label">Weekly gatherings</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Various</div>
+            <div class="stat-label">Online courses offered</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">All</div>
+            <div class="stat-label">Families supported</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">One</div>
+            <div class="stat-label">Community, one heart</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal img-container" style="position: relative; height: 100%; min-height: 480px;">
+        <img src="images/school_seerat_calligraphy.jpg" alt="Beautifully bound Holy Quran" class="img-cover" />
+        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 40px; background: linear-gradient(to top, rgba(30,54,16,0.95) 0%, rgba(30,54,16,0.5) 60%, transparent 100%);">
+          <div class="quote-arabic" style="margin-bottom: 12px; font-size: 2rem;">وَأَحْسِنُوا ۚ إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ</div>
+          <div class="quote-text" style="font-size: 1.25rem;">'And do good; indeed, Allah loves the doers of good.'</div>
+          <div class="quote-source">Surah Al-Baqarah &middot; 2:195</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SERVICES OVERVIEW ======== -->
+  <section class="services" id="services">
+    <div class="services-header reveal">
+      <div>
+        <div class="section-label">How we serve</div>
+        <h2 class="heading-xl">Our programmes<br/>&amp; services</h2>
+      </div>
+      <p style="font-size:1.05rem; color:var(--ink-2); line-height:1.75;">Each programme is designed with sincerity — not as a transaction, but as an act of worship for Allah SWT and care for every person who comes to us.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal" id="service-food-bank">
+        <div class="service-num">01</div>
+        <h3 class="service-title">Food Bank Support</h3>
+        <p class="service-desc">Providing nutritious food packages to individuals and families in need.</p>
+        <a href="contact.html" class="service-link">Request assistance</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">02</div>
+        <h3 class="service-title">Clothing Distribution</h3>
+        <p class="service-desc">Offering clean, quality clothing to help people stay warm, confident, and supported.</p>
+        <a href="community-services.html" class="service-link">Learn more</a>
+      </div>
+      <div class="service-card reveal" id="service-nikah">
+        <div class="service-num">03</div>
+        <h3 class="service-title">Nikah Ceremonies</h3>
+        <p class="service-desc">Facilitating simple, respectful, and Shariah-compliant nikah ceremonies for couples seeking a blessed start.</p>
+        <a href="contact.html" class="service-link">Book a ceremony</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">04</div>
+        <h3 class="service-title">Nikah Assistance</h3>
+        <p class="service-desc">Compassionate financial support for families especially girls who cannot afford marriage-related expenses.</p>
+        <a href="contact.html" class="service-link">Seek assistance</a>
+      </div>
+      <div class="service-card reveal" id="service-zikr">
+        <div class="service-num">05</div>
+        <h3 class="service-title">Zikr Gatherings</h3>
+        <p class="service-desc">Open weekly gatherings for remembrance of Allah, spiritual reflection, Qur'anic recitation, and community du'a.</p>
+        <a href="spiritual-gatherings.html" class="service-link">Join us</a>
+      </div>
+      <div class="service-card reveal" id="service-education">
+        <div class="service-num">06</div>
+        <h3 class="service-title">Islamic Education</h3>
+        <p class="service-desc">Online school offering authentic Islamic knowledge for men, women and children — from basics of faith to Tafseer of the Qur'an.</p>
+        <a href="online-school.html" class="service-link">Enrol today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CTA BANNER ======== -->
+  <div class="cta-banner">
+    <h2 class="heading-xl reveal">Come gather with us</h2>
+    <p class="reveal">Every Thursday evening and throughout the week — all are welcome.</p>
+    <div class="cta-actions reveal">
+      <a href="contact.html" class="btn-gold">Attend a Gathering</a>
+      <a href="online-school.html" class="btn-outline-white">Explore the School</a>
+    </div>
+  </div>
+
+  <!-- ======== FOOTER ======== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.png" alt="Jamia Masjid E Ali Logo" class="footer-logo-img" />
+          Jamia Masjid E Ali Canada
+        </a>
+        <p class="footer-tagline">Serving with dignity, growing in faith. An Islamic community organization dedicated to spiritual growth, charitable service, and authentic education.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/jamiamasjidealicanada/" target="_blank" rel="noopener" class="footer-social-link" title="Follow us on Instagram" aria-label="Follow us on Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61586691962228" target="_blank" rel="noopener" class="footer-social-link" title="Follow us on Facebook" aria-label="Follow us on Facebook">
+            <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+          </a>
+        </div>
+        <div class="footer-bismillah" style="margin-top: 20px;">بسم الله الرحمن الرحيم</div>
+      </div>
+      <div>
+        <div class="footer-heading">Our work</div>
+        <ul class="footer-links">
+          <li><a href="community-services.html">Charitable services</a></li>
+          <li><a href="spiritual-gatherings.html">Zikr gatherings</a></li>
+          <li><a href="online-school.html">Imam Mahdi School</a></li>
+          <li><a href="community-services.html#nikah">Nikah services</a></li>
+          <li><a href="contact.html">Get involved</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="online-school.html">Online school</a></li>
+          <li><a href="online-school.html#courses">Course offerings</a></li>
+          <li><a href="contact.html">Enrol today</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Community</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="contact.html">Reach out</a></li>
+          <li><a href="contact.html">Donate</a></li>
+          <li><a href="contact.html">Volunteer</a></li>
+          <li><a href="contact.html">Request help</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Jamia Masjid E Ali Canada — Saifi Foundation. All rights reserved.</span>
+      <span style="font-size:0.75rem; color:rgba(255,255,255,0.2);">Privacy · Terms</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
